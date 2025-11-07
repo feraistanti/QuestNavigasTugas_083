@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">QuestNavigasTugas_083</string>
+    <string name="submit">Submit</string>
+    <string name="back">Back</string>
+    <string name="nama_lengkap">NAMA LENGKAP</string>
+    <string name="jenis_kelamin">JENIS KELAMIN</string>
+    <string name="alamat">ALAMAT</string>
+    <string name="tampil">Tampilan Data</string>
+    <string name="form">Form Isian</string>
+    <string name="greeting">Selamat Datang</string>
+    <string name="nim">NIM</string>
+    <string name="beranda">Beranda</string>
+    <string name="status">Status Perkawinan</string>
+</resources>
