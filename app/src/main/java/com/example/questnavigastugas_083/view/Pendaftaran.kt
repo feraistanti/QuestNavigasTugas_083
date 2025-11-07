@@ -97,3 +97,20 @@ fun FormIsian(
                     .verticalScroll(rememberScrollState()),
                 horizontalAlignment = Alignment.Start
             ) {
+
+                // --- NAMA LENGKAP ---
+                Text(
+                    text = "NAMA LENGKAP",
+                    fontWeight = FontWeight.SemiBold,
+                    modifier = Modifier.padding(top = 8.dp)
+                )
+                OutlinedTextField(
+                    value = textNama,
+                    singleLine = true,
+                    modifier = Modifier.fillMaxWidth(),
+                    label = { Text(text = "Isian nama lengkap") },
+                    onValueChange = { textNama = it }
+                )
+                Spacer(modifier = Modifier.height(20.dp))
+
+  }
