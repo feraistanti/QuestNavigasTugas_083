@@ -134,9 +134,24 @@ fun FormIsian(
                 }
                 Spacer(modifier = Modifier.height(20.dp))
 
+                // --- STATUS PERKAWINAN ---
+                Text(text = "STATUS PERKAWINAN", fontWeight = FontWeight.SemiBold)
+                Column(modifier = Modifier.fillMaxWidth()) {
+                    statusKawinOptions.forEach { item ->
+                        Row(
+                            modifier = Modifier
+                                .selectable(
+                                    selected = selectedStatusKawin == item,
+                                    onClick = { selectedStatusKawin = item })
+                                .fillMaxWidth(),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            RadioButton(
+                                selected = selectedStatusKawin == item,
+                                onClick = { selectedStatusKawin = item })
+                            Text(item, style = MaterialTheme.typography.bodyLarge)
+                        }
+                    }
+                }
+                Spacer(modifier = Modifier.height(20.dp))
 
-
-            }
-        }
-    }
-}
