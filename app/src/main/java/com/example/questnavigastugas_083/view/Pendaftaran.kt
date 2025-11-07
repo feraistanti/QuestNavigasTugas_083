@@ -113,4 +113,30 @@ fun FormIsian(
                 )
                 Spacer(modifier = Modifier.height(20.dp))
 
-  }
+                // --- JENIS KELAMIN ---
+                Text(text = "JENIS KELAMIN", fontWeight = FontWeight.SemiBold)
+                Column(modifier = Modifier.fillMaxWidth()) {
+                    genderOptions.forEach { item ->
+                        Row(
+                            modifier = Modifier
+                                .selectable(
+                                    selected = selectedJK == item,
+                                    onClick = { selectedJK = item })
+                                .fillMaxWidth(),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            RadioButton(
+                                selected = selectedJK == item,
+                                onClick = { selectedJK = item })
+                            Text(item, style = MaterialTheme.typography.bodyLarge)
+                        }
+                    }
+                }
+                Spacer(modifier = Modifier.height(20.dp))
+
+
+
+            }
+        }
+    }
+}
