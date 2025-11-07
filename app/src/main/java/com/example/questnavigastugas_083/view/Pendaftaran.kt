@@ -155,3 +155,31 @@ fun FormIsian(
                 }
                 Spacer(modifier = Modifier.height(20.dp))
 
+                // --- ALAMAT ---
+                Text(text = "ALAMAT", fontWeight = FontWeight.SemiBold)
+                OutlinedTextField(
+                    value = textAlamat,
+                    singleLine = true,
+                    modifier = Modifier.fillMaxWidth(),
+                    label = { Text(text = "Alamat") },
+                    onValueChange = { textAlamat = it }
+                )
+                Spacer(modifier = Modifier.height(25.dp))
+
+                // --- Tombol Submit ---
+                Button(
+                    modifier = Modifier.fillMaxWidth().height(45.dp),
+                    colors = ButtonDefaults.buttonColors(containerColor = PurpleSubmit),
+                    enabled = textNama.isNotEmpty() && selectedJK.isNotEmpty() && selectedStatusKawin.isNotEmpty() && textAlamat.isNotEmpty(),
+                    onClick = onSubmitBtnClick
+                ) {
+                    Text("Submit")
+                }
+                Spacer(modifier = Modifier.height(20.dp))
+
+
+
+            }
+        }
+    }
+}
