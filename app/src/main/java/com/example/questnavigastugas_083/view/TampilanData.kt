@@ -73,3 +73,15 @@ fun TampilData(
                     onClick = onBackClick) {
                     Text(text = stringResource(id=R.string.back))
                 }
+
+                Spacer(modifier = Modifier.height(height = 10.dp))
+                Button(
+                    modifier = Modifier.fillMaxWidth(),
+                    onClick = onBackHomeClick) {
+                    Text(text = stringResource(id=R.string.beranda))
+                }
+            }
+        }
+    }
+
+}
