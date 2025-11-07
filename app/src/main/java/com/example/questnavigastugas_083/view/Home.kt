@@ -15,7 +15,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.questnavigastugas_083.R // Pastikan ini sesuai dengan package dan lokasi file R Anda
 
-// Home composable ini menerima lambda untuk navigasi
+
 @Composable
 fun Home(onNavigateToPendaftaran: () -> Unit) {
     // Scaffold memberikan struktur dasar untuk layar, termasuk slot untuk TopBar, BottomBar, dll.
