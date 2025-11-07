@@ -55,3 +55,16 @@ fun DataApp(
                 )
             }
 
+            composable(route = Navigasi.Home.name){
+                Home (
+                    onNavigateToPendaftaran = {
+                        navController.navigate(Navigasi.Formulirku.name)
+                    }
+                )
+            }
+
+        }
+    }
+}
+
+
