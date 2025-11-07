@@ -43,3 +43,15 @@ fun DataApp(
                         // Kembali ke Formulirku (Logika ini sudah benar)
                         cancelAndBackToFormulirku(navController)
                     },
+                    onBackHomeClick = {
+                        // PERUBAHAN DISINI: Menggunakan navigate dengan popUpTo dan inclusive=true
+                        navController.navigate(Navigasi.Home.name) {
+                            // Menghapus semua destination yang ada di atas Home
+                            popUpTo(Navigasi.Home.name) {
+                                inclusive = true
+                            }
+                        }
+                    }
+                )
+            }
+
