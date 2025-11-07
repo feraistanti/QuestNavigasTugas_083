@@ -36,4 +36,10 @@ fun DataApp(
                         navController.navigate(Navigasi.Detail.name)
                     }
                 )
-  }
+            }
+            composable(route = Navigasi.Detail.name){
+                TampilData(
+                    onBackClick = {
+                        // Kembali ke Formulirku (Logika ini sudah benar)
+                        cancelAndBackToFormulirku(navController)
+                    },
